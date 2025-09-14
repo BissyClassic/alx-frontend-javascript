@@ -17,6 +17,7 @@ const teacher3: Teacher = {
   contract: false,
 };
 
+// Extend Teacher into Directors
 interface Directors extends Teacher {
   numberOfReports: number;
 }
