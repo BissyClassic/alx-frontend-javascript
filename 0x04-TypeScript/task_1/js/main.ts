@@ -27,15 +27,15 @@ console.log(director1);
 // 3. Printing teachers
 // ============================
 
-// Function interface
+// Define function interface
 interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
 
-// Function implementation
-const printTeacher: printTeacherFunction = function(firstName: string, lastName: string): string {
-  return `${firstName[0]}. ${lastName}`;
+// Implement the function
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+  return `${firstName.charAt(0)}. ${lastName}`;
 };
 
-// Example
-console.log(printTeacher("John", "Doe")); // Expected: J. Doe
+// Example usage
+console.log(printTeacher("John", "Doe")); // Output: J. Doe
