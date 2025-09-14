@@ -1,11 +1,10 @@
-// Define the Teacher interface
 interface Teacher {
-  readonly firstName: string;       // cannot be changed after init
-  readonly lastName: string;        // cannot be changed after init
-  fullTimeEmployee: boolean;        // must always be defined
-  yearsOfExperience?: number;       // optional
-  location: string;                 // must always be defined
-  [key: string]: any;               // allow additional attributes
+  readonly firstName: string;
+  readonly lastName: string;
+  fullTimeEmployee: boolean;
+  yearsOfExperience?: number;
+  location: string;
+  [key: string]: any; // allow extra properties like "contract"
 }
 
 // Example usage
